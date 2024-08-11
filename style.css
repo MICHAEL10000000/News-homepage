@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+:root {
+    /* Primary */
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+
+    /* Neutral */
+
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+@font-face {
+    font-family: "Static";
+    src: url(/codes/assets/fonts/static/Inter-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "Light";
+    src: url(/codes/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+@media screen and (min-width: 1024px) {
+    body{
+        padding: 0 5rem 0 5rem;
+    }
+    
+}
+
+.other_news > div>h2 {
+    font-family: Static;
+}
+.other_news > div>p, p, div>ul>li {
+    font-family: Light;
+}
+
+/* HEADER */
+ul {
+    list-style-type: none;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-left: 0.5rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+  }
+  header > div > ul {
+    display: flex;
+  }
+  .nav_tools > ul > li {
+    margin-left: 1rem;
+}
+.nav_tools > ul > li:hover {
+    border-bottom: var(--Soft-red) 3px solid;
+}
+main{
+    display: grid;
+    grid-template-columns: minmax(375px, 3fr) 1.5fr;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+/* 1st Part */
+.first_part {
+    /* grid-column: 1/4; */
+}
+.first_part>img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.page_desc > h1 {
+    font-size: 3rem;
+    font-family: static;
+  }
+.page_desc >div>p {
+    font-family: Light;
+    /* max-width: 30ch; */
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+button>a {
+    display: block;
+    text-decoration: none;
+    background-color: var(--Soft-red);
+    color: white;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    font-family: Light;
+    font-weight: 650;
+}
+button{
+    border: none;
+}
+@media screen and( min-width:768px) {
+    .page_desc{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+       /*  display: flex;
+        flex: 1;
+        gap: 1.5rem;
+        align-items:flex-start;
+        justify-content: center; */
+    }
+    /* .page_desc > h1 {
+    font-size: 3rem;
+    font-family: static;
+  } */
+}
+
+
+/* 2nd part */
+.other_news{
+    /* grid-column: 5/6; */
+    background-color: black;
+    padding: 1.5rem 2rem 1rem 2rem;
+}
+.other_news>div{
+    color: white;
+    margin-bottom: 1.5rem;
+    border-bottom: white 1px solid;
+    padding-bottom: 2.5rem;
+}
+.other_news>h1 {
+    color: var(--Soft-orange);
+    font-family: static;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer section */
+.footer_news>div{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.footer_news {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.footer_news>div>img{
+    height: 20vh;
+}
+.footer_news>div>div>p{
+    width: 20ch;
+}
+.footer_news>div>div>h2{
+    font-family: static;
+}
+.footer_news>div>div>h1{
+    color: var(--Grayish-blue);
+    font-family: static;
+}
+.accessory>img{  
+    display: none;
+}
+.accessory>div{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: white;
+    height: 100vh;
+    width: 50vw;
+    padding: 4rem 2rem 2rem 2rem;
+
+}
+.accessory>div>ul>li{
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+.accessory>div>img{
+    margin-bottom: 2rem;
+position: absolute;
+top: 30px;
+right: 40px;
+}
+@media screen and (max-width: 600px){
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    header > div > ul{
+        display: none;
+    }
+    .page_desc{
+        flex-direction: column;
+    }
+    .accessory>img{
+        display: inline;
+        position: absolute;
+        top: 2.5rem;
+        right: 2.5rem;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    .footer_news>div>div>p{
+        width: 25ch;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .footer_news{
+        flex-wrap: nowrap;
+    }
+}
+.visibilityClass{
+    display: block;
+}
