@@ -1,0 +1,67 @@
+# Frontend Mentor - News homepage solution
+
+This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+  - [Author](#author)
+
+## Overview
+
+This challenge is basically about building a news homepage that relate news about technology. The project is built majorly with HTML and Css with a little Javascript which is essential in mobile version.
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
+
+### Screenshot
+
+(Annotation 2024-01-03 084410.png)
+(Annotation 2024-01-03 084437.png)
+If you are unable to go through this please check the images in the Read me folder
+
+### Links
+
+### My Process
+
+1. I began the project by writing out it HTML document creating a header part, a main body part and a footer section
+2. I continued by styling my header section to suit the needed design by removing link decorations and adding appropriate flexes
+3. In the main body section i made two div container another programmer might have made 3 and grid them all at once but i decided to make two, flex a part and then grid one part against the order
+   Note: In styling i did not forget to add necessary minmax syntax(for grid)
+4. I then went to the footer section and made the necessary container and flexing them. I also add a flex-wrap so it will be more responsive
+5. I built the mobile part making certain changes like changing the links above to a three bar image which when click it brings out the links this was done with javascript
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Javascript
+
+### Continued development
+
+I will admit that in a real world project more may need to be done in a project such as this. Some of this include
+
+1.  Links such as the Home, New, Category, Popular and Trending should have a valid page where they link to.
+2.  The New section should be clickable so that it brings out news in the main section and so should the footer section
+    However this projects is majorly for me to practice my HTML, CSS and JavaScript skills that is why for now I have linited the scope of the Project.
+    You can follow me on twitter @GbengaOmilani so you will be notified if an update comes on this project and to see more of my projects.
+    if you will like to make continuous development on this project you can send me a dm on twitter so we can work together and if they are observations you will like to bring to my attention on this project you can send a dm to me on twitter as well
+
+## Author
+
+- Name - [Omilani Michael Olugbenga]
+- Frontend Mentor - [@MICHAEL10000000](https://www.frontendmentor.io/profile/MICHAEL10000000)
+- Twitter - [@GbengaOmilani](https://www.twitter.com/@GbengaOmilani)
