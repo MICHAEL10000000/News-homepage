@@ -100,10 +100,14 @@ button>a {
 button{
     border: none;
 }
+button{
+    font-family: static;
+}
 @media screen and (min-width:768px) {
     .page_desc{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 0.85fr 1fr;
+        gap: 2rem;
     }
 }
 
@@ -112,18 +116,22 @@ button{
 .other_news{
     /* grid-column: 5/6; */
     background-color: black;
-    padding: 1.5rem 2rem 1rem 2rem;
+    padding: 1.5rem 1rem 1rem 1rem;
 }
 .other_news>div{
     color: white;
     margin-bottom: 1.5rem;
     border-bottom: white 1px solid;
-    padding-bottom: 2.5rem;
+    padding-bottom: 2rem;
 }
 .other_news>h1 {
     color: var(--Soft-orange);
     font-family: static;
     margin-bottom: 1.5rem;
+}
+.other_news >div>h2{
+    font-size: 1.2rem;
+    text-wrap: nowrap;
 }
 
 /* Footer section */
